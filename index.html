@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>World War II: 1939–1945</title>
+<meta name="description" content="The full story of the Second World War: chapters, an interactive timeline, battles and facts.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.curtain{display:none}.drips{display:none}.wipe .frame{clip-path:none}</style></noscript>
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="curtain cover" aria-hidden="true"></div>
+<header id="site-header"></header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-sun" data-speed="-0.12" aria-hidden="true"></div>
+    <div class="drips" data-drips="16" data-tall="1" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <h1><span class="l1">World</span><span class="l2">War II</span></h1>
+        <p class="lede">Six years, more than thirty countries, and an estimated 70 to 85 million dead. Read how it happened, in order.</p>
+        <div class="cta">
+          <a class="btn" href="story.html">Read the full story</a>
+          <a class="btn alt" href="timeline.html">Open the timeline</a>
+        </div>
+      </div>
+      <div class="globe-wrap" data-speed="0.05">
+        <div id="globe" aria-label="Interactive globe with major sites of the war. Drag to rotate."></div>
+        <div id="globe-tip" class="tip" role="status"></div>
+        <p class="hint">Drag the globe. Hover the red marks.</p>
+      </div>
+    </div>
+    <span class="stamp" aria-hidden="true">1939–1945</span>
+  </section>
+
+  <section class="strip" aria-label="The war in numbers">
+    <div class="wrap">
+      <div class="stat"><b data-count="70" data-suffix="–85M">0</b><span>Estimated people killed, soldiers and civilians</span></div>
+      <div class="stat"><b data-count="30" data-suffix="+">0</b><span>Countries that fought in the war</span></div>
+      <div class="stat"><b data-count="3" data-suffix="%">0</b><span>Share of the world's population that died</span></div>
+      <div class="stat"><b data-count="6" data-suffix=" yrs">0</b><span>From 1 September 1939 to 2 September 1945</span></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head">
+        <h2>Open a file</h2>
+        <p>Four ways into the same war. Start with the story if you want it told in order.</p>
+      </div>
+      <div class="files">
+        <a class="file" href="story.html"><div><span class="n">I</span><h3>The story</h3><p>Eight chapters from the failed peace of 1919 to the trials at Nuremberg.</p></div><span class="go">Read it</span></a>
+        <a class="file" href="timeline.html"><div><span class="n">II</span><h3>Timeline</h3><p>Over forty events on four fronts. Zoom, drag and filter.</p></div><span class="go">Explore it</span></a>
+        <a class="file" href="battles.html"><div><span class="n">III</span><h3>Battles</h3><p>Ten decisive battles, plus a chart of who lost the most people.</p></div><span class="go">Study it</span></a>
+        <a class="file" href="facts.html"><div><span class="n">IV</span><h3>Facts and quiz</h3><p>Twelve flip cards and a five-question quiz.</p></div><span class="go">Test yourself</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block ink quote">
+    <span class="bigmark" data-speed="-0.08" aria-hidden="true">"</span>
+    <div class="wrap">
+      <blockquote>Never in the field of human conflict was so much owed by so many to so few.</blockquote>
+      <cite>Winston Churchill, House of Commons, 20 August 1940, on the pilots of the Battle of Britain</cite>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Battles — World War II</title>
+<meta name="description" content="Ten decisive battles of the Second World War and the cost in lives by country.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.curtain{display:none}.drips{display:none}.wipe .frame{clip-path:none}</style></noscript>
+</head>
+<body data-page="battles">
+<a class="skip" href="#main">Skip to content</a>
+<div class="curtain cover" aria-hidden="true"></div>
+<header id="site-header"></header>
+<main id="main">
+  <section class="phero">
+    <div class="drips" data-drips="12" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1>Battles</h1>
+      <p>Ten battles that shaped the war, and a chart of what it cost each country.</p>
+    </div>
+    <span class="ghost" data-speed="0.1" aria-hidden="true">1942</span>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head"><h2>The cost in lives</h2><p>Estimated deaths by country, soldiers and civilians together, in millions. Hover or focus a bar for the detail.</p></div>
+      <div id="bars"><div id="bars-svg"></div><p id="bar-note" class="bar-note" aria-live="polite"></p></div>
+    </div>
+  </section>
+
+  <section class="block ink">
+    <div class="wrap">
+      <div class="head"><h2>Ten decisive battles</h2></div>
+      <div class="chips" id="front-chips" aria-label="Filter by front"></div>
+      <div class="grid" id="battle-grid"></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

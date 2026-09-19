@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Timeline — World War II</title>
+<meta name="description" content="An interactive, zoomable timeline of the Second World War.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.curtain{display:none}.drips{display:none}.wipe .frame{clip-path:none}</style></noscript>
+</head>
+<body data-page="timeline">
+<a class="skip" href="#main">Skip to content</a>
+<div class="curtain cover" aria-hidden="true"></div>
+<header id="site-header"></header>
+<main id="main">
+  <section class="phero">
+    <div class="drips" data-drips="12" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1>Timeline</h1>
+      <p>More than forty events on four fronts. Drag to move along the years, select a marker for details.</p>
+    </div>
+    <span class="ghost" data-speed="0.1" aria-hidden="true">1945</span>
+  </section>
+  <section class="block">
+    <div class="wrap">
+      <div class="chips" id="chips" aria-label="Filter by front"></div>
+      <div class="chips">
+        <button class="chip" id="tl-zoom-in" style="--c:#e6dfc9">Zoom in</button>
+        <button class="chip" id="tl-zoom-out" style="--c:#e6dfc9">Zoom out</button>
+        <button class="chip" id="tl-reset" style="--c:#e6dfc9">Reset</button>
+      </div>
+      <div id="tl"></div>
+      <p class="tl-note">Hold Ctrl (or Cmd) and scroll to zoom, or pinch on a touch screen.</p>
+      <div id="tl-info" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
